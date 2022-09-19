@@ -5,9 +5,9 @@ mydb = client.pytech
 pytechdb = mydb["pytech"]
 studentcollection = mydb.students
 
-student1 = {"first_name": "Quincy", "student_id": 1006}
-student2 = {"first_name": "Sean", "student_id": 1007}
-student3 = {"first_name": "Haydn", "student_id": 1008}
+student1 = {"first_name": "Quincy", "last_name": "Jones", "student_id": 1007}
+student2 = {"first_name": "Sean", "last_name": "Hardge", "student_id": 1008}
+student3 = {"first_name": "Haydn", "last_name": "Hurst", "student_id": 1009}
 
 student1_student_id = studentcollection.insert_one(student1).inserted_id
 student2_student_id = studentcollection.insert_one(student2).inserted_id
